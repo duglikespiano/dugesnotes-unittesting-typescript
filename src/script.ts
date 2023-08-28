@@ -17,12 +17,13 @@ export const extractNumbers = (req: Request) => {
 	return [num1Input, num2Input];
 };
 
-export const addNumbers = (numbers: number[]) => {
+export const addNumbers = (numbers?: any, numbers2?: any, numbers3?: any) => {
 	let sum = 0;
 
-	for (const number of numbers) {
-		sum += number;
-		// sum += +number;
+	// numbers?: number[]
+	for (const number of numbers!) {
+		// sum += number;
+		sum += +number;
 	}
 	return sum;
 };
@@ -67,7 +68,7 @@ export const mainpage = (resultText: string) => {
 	`;
 };
 
-export function transformToNumber(value: string) {
+export function transformToNumber(value: any) {
 	return +value;
 }
 
