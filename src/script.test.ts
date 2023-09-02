@@ -1,5 +1,10 @@
 import { it, expect, describe } from 'vitest';
-import { addNumbers, transformToNumber } from './script';
+import {
+	addNumbers,
+	transformToNumber,
+	validateNumber,
+	validateStringNotEmpty,
+} from './script';
 
 describe('addNumbers()', () => {
 	it('should summarize all number values in an array', () => {
@@ -122,5 +127,30 @@ describe('generateResultText()', () => {
 		expect(result1).toBeTypeOf('string');
 		expect(result2).toBeTypeOf('string');
 		expect(result3).toBeTypeOf('string');
+	});
+});
+
+function cleanNumbers(numberValues: any): any[] {
+	const numbers: any[] = [];
+	for (const numberInput of numberValues) {
+		validateStringNotEmpty(numberInput);
+		const number = transformToNumber(numberInput);
+		validateNumber(number);
+		numbers.push(number);
+	}
+	return numbers;
+}
+
+describe('cleanNumbers()', () => {
+	it('should return an array of values if an array of string number values is provided', () => {
+		const numberValues = ['1', '2'];
+		const cleanedNumbers = cleanNumbers(numberValues);
+		expect(cleanedNumbers[0]).toBeTypeOf('number');
+	});
+
+	it('should throw an error if an array with at least one empty string is provided', () => {
+		const numberValues = ['', 1];
+		const cleanFunction = () => cleanNumbers(numberValues);
+		expect(cleanFunction).toThrow();
 	});
 });
