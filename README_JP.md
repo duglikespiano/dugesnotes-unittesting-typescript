@@ -4,7 +4,7 @@
 
 ##### [Click here for English version](README_EN.md)
 
-## - Index -
+## - 目次 -
 
 1. 概要
 2. Project 目標

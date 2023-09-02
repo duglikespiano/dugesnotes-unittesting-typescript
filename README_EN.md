@@ -15,7 +15,7 @@
 
 - Project title : unittesting_typescript
 - Reference URL : https://www.udemy.com/course/javascript-unit-testing-the-practical-guide
-- Period : 2023.08.26 - in progress
+- Period : Aug 26 2023 - in progress
 - Tech stack : </br>
   <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white">
   </br>
