@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"type": "commonjs",
 	"scripts": {
-		"test": "vitest --run"
+		"test": "vitest --run --environment happy-dom"
 	},
 	"keywords": [],
 	"author": "",
