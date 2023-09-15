@@ -1,4 +1,4 @@
-# unittesting_typescript(kr)
+# dugsnotes_unittesting_typescript(kr)
 
 ##### [Click here for English version](README_EN.md)
 
@@ -13,9 +13,9 @@
 
 ### 1. 개요
 
-- 프로젝트명 : unittesting_typescript
+- 프로젝트명 : dugsnotes_unittesting_typescript
 - 참고URL : https://www.udemy.com/course/javascript-unit-testing-the-practical-guide
-- 기간 : 2023.08.26 - 진행 중
+- 기간 : 2023.08.26 - 2023.09.15(3주)
 - 기술스택 : </br>
   <img src="https://img.shields.io/badge/vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white"> <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white">
   </br>
